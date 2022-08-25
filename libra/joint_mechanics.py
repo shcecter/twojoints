@@ -63,7 +63,7 @@ def calc_muscle_force(mus, mus_idx, q_idx, sfo, sfi, sol, time):
     return _force
 
 
-def two_j_mech_modfed(t, y):
+def two_j_mech_modfed(t, y, ps, muscles):
     '''
     just wrapper to use `two_joint_mech` with scipy.solve_ivp
     '''
